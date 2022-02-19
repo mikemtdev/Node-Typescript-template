@@ -1,0 +1,25 @@
+{
+  "name": "AuthGraphQL",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mikemtdev/AuthGraphQL.git",
+  "author": "mikemtdev <mikemnjovu@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "yarn run build && node build/index.js",
+    "lint": "eslint . --ext .ts, .js"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.18",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}
